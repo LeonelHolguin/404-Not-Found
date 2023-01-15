@@ -1,0 +1,141 @@
+:root {
+    --color-casual: #333333;
+}
+
+h1 {
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.563rem;
+    letter-spacing: -0.08em;
+    color: var(--color-casual);
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    gap: 2rem;
+}
+
+#container img {
+    width: 40%;
+    height: 50%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+#container .contents {
+    width: 50%;
+    margin-left: 3rem;
+    font-family: 'Space Mono';
+    font-style: normal;
+    letter-spacing: -0.035em;
+}
+
+#container .contents h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.938rem;
+    color: var(--color-casual);
+}
+
+#container .contents p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #4F4F4F;
+    width: 55%;
+}
+
+#container button {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+    background-color: var(--color-casual);
+    height: 4rem;
+    min-width: 30%;
+    border: none;
+    margin-top: 2rem;
+}
+
+#container button:hover {
+    background-color: #4F4F4F;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    color: #BDBDBD;
+}
+
+footer a {
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+footer a:hover {
+    color: aquamarine;
+}
+
+@media (max-width: 569px) {
+    *{
+        width: 100vw;
+    }
+
+    h1 {
+        padding: 1rem;
+        margin: 1.5rem;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #container img {
+        width: 80%;
+        align-self: center;
+    }
+
+    #container .contents {
+        width: 100%;
+        
+    }
+
+    #container .contents h2 {
+        font-size: 3rem;
+        line-height: 4.443rem;
+        margin-left: 1px;
+    }
+
+    #container .contents p {
+        font-size: 1.125rem;
+        line-height: 1.666rem;
+        width: 90%;
+        margin-top: 2rem;
+        margin-left: 1px;
+    }
+
+    #container button {
+        margin-top: 5rem;
+        max-width: 65%;
+    }
+
+    footer {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        padding-bottom: 1rem;
+    }
+}
